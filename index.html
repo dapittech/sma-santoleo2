@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMA Santo Leo 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+  background: #1b5e20;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(27,94,32,0.8), rgba(27,94,32,0.8)),
+              url('https://images.unsplash.com/photo-1588072432836-e10032774350') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: #ffeb3b;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>SMA Santo Leo 2</h1>
+  <ul>
+    <li><a href="#home">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
+
+<div class="hero" id="home">
+  <div>
+    <h2>Membangun Generasi Cerdas & Berintegritas</h2>
+    <p>Sekolah unggulan dengan pendidikan berkualitas dan karakter kuat.</p>
+    <button>Lihat Profil</button>
+  </div>
+</div>
+
+<section id="about">
+  <h2 class="section-title">Tentang Sekolah</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    SMA Santo Leo 2 berdiri dengan komitmen membentuk siswa yang unggul dalam akademik dan karakter.
+  </p>
+</section>
+
+<section id="program">
+  <h2 class="section-title">Program Pendidikan</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>IPA</h3>
+      <p>Fokus pada sains, teknologi, dan riset akademik.</p>
+    </div>
+    <div class="card">
+      <h3>IPS</h3>
+      <p>Pembelajaran ekonomi, sosial, dan manajemen.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="section-title">Galeri Kegiatan</h2>
+  <div class="gallery">
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+    <img src="foto4.jpg">
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Kontak</h2>
+  <p style="text-align:center;">
+    📍 Jl. Pendidikan No.123<br>
+    📞 0812-3456-7890<br>
+    ✉ info@smasantoleo2.sch.id
+  </p>
+</section>
+
+<footer>
+  © 2026 SMA Santo Leo 2 | All Rights Reserved
+</footer>
+
+</body>
+</html>
